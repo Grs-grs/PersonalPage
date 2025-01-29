@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+  }
+
 /* Import de fonte */
 @font-face {
     font-family: Cyberpunk;
@@ -19,18 +23,32 @@
 
 /* criacao de "variaveis" */
 :root{
+/* 
 --cinza:#332B2B;
 --cinzaClaro: #462F2E;
 --BegeEscuro:#703A38;
 --VermelhoRealce: #F00901;
 --BegeClaro: #9B3734;
---VermelhoClaro: #C52621;
+--VermelhoClaro: #C52621; 
+*/
+--DarkOrange:#FFA000;
+--LighterOrange:#FFECB3;
+--Yellow: #FFC107;
+--Black: #212121;
+--Gray: #757575;
+--LightGray: #BDBDBD;
+
+
+}
+main{
+    /* background-color: var(--cinzaClaro); */
 }
 
 /* Header */
 header{
     width: 100%;
     height: 10vh;
+    background-color: var(--BegeClaro)
 
 }
 
@@ -45,7 +63,7 @@ header > ol{
 
 header > ol li{
     list-style-type: none;
-    color: var(--VermelhoRealce);
+    color: var(--cinza);
 
 }
 
@@ -59,6 +77,138 @@ header > ol li > a {
 
 .Container-desc-img{
     display: flex;
+    flex-direction: column;
+
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    
+}
+.descricao h1 {
+    font-family: Cyberpunk;
+    font-size: 50px;
+}
+.descricao p{
+    font-family: Thermal;
+    font-size: 25px;
 }
 
+ .description{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    row-gap: 1rem;
+    font-family: "Inter", serif;
 
+}   
+.imagem-texto{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    column-gap: 4rem;
+    justify-content: center;
+}
+.container-imagem{
+    width: 300px;
+    height: 350px;
+    /* border-radius: 30px; */
+}
+
+#imagem-nome{
+    width: 100%;
+    height: 100%;
+}
+
+/* Desafio Carrossel */
+
+.container-entretenimento {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;  /* Centers horizontally */
+    /* height: 100%; */
+    justify-content: center;  /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+  }
+
+  .Carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide-wrapper {
+    display: flex;
+    width: 300%; /* Three slides, so 300% width */
+    animation: slide 10s linear infinite;  
+  }
+
+  .Carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .container-entretenimento {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;  /* Centers horizontally */
+    /* height: 100%; */
+    justify-content: center;  /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+  }
+
+  .Carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide-wrapper {
+    display: flex;
+    width: 200%; /* Three slides, so 300% width */
+    animation: slide 10s linear infinite;  
+  }
+
+  .Carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    33.33% {
+      transform: translateX(-100%);
+    }
+    66.66% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Optional: Adjusting spacing and styling for each carousel */
+  .Carousel + .Carousel {
+    margin-top: 20px;
+  }
+
+  /* Optional: Adjusting spacing and styling for each carousel */
+  .Carousel + .Carousel {
+    margin-top: 20px;
+  }
