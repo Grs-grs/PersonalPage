@@ -45,8 +45,11 @@
         <section class="container-entretenimento">
             <div class="Carousel"> <h1>Teste</h1>
                 <div class="slide-wrapper">
+                    <h3>O poder da espada</h3>
                     <img src="./src/assets/books/BladeItSelf.jpg">
+                    <h3>Crime e Castigo</h3>
                     <img src="./src/assets/books/Fiodor.jpg">
+                    <h3>The Witcher</h3>
                     <img src="./src/assets/books/theWitcher.jpg">
                 </div>
             </div>

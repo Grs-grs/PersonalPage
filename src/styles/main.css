@@ -37,19 +37,20 @@ html, body {
 --Black: #212121;
 --Gray: #757575;
 --LightGray: #BDBDBD;
-
+--Black: #000000;
+--White: #fff;
 
 }
 main{
-    /* background-color: var(--cinzaClaro); */
+margin: 0;
+padding: 0;
 }
 
 /* Header */
 header{
     width: 100%;
     height: 10vh;
-    background-color: var(--BegeClaro)
-
+    background-color: var(--Black);
 }
 
 header > ol{
@@ -63,23 +64,51 @@ header > ol{
 
 header > ol li{
     list-style-type: none;
-    color: var(--cinza);
+    color: var(--DarkOrange);
 
 }
 
 
 header > ol li > a {
-    font-family: "Inter", serif;
-    font-weight: bolder;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight:900;
+  font-size: 18px;
+}
+
+
+/* Barra de separação*/
+
+.linha{
+  height: 0.2rem;
+  border-width: 0;
+  color: black;
+  background-color: #FFA000;
+  /* margin-top: 2rem; */
 }
 
 /* Comeco Nome */
 
-.Container-desc-img{
+
+
+.container-text-img{
+  margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4rem;
+  border-bottom: 2rem;
+}
+/*  */
+
+.sec-desc-img{
     display: flex;
     flex-direction: column;
-
+    /* margin-bottom: 3rem; */
+    background-color: var(--Black);
+    padding-bottom: 7rem;
+    
 }
+
 .descricao{
     display: flex;
     flex-direction: column;
@@ -90,10 +119,12 @@ header > ol li > a {
 .descricao h1 {
     font-family: Cyberpunk;
     font-size: 50px;
+    color: var(--Yellow);
 }
 .descricao p{
     font-family: Thermal;
     font-size: 25px;
+    color: var(--DarkOrange);
 }
 
  .description{
@@ -102,9 +133,17 @@ header > ol li > a {
     width: 300px;
     height: 100%;
     row-gap: 1rem;
-    font-family: "Inter", serif;
-
 }   
+.description p{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+  font-style:normal;
+  font-size: 18px;
+  color: var(--LighterOrange);
+  
+}
+
+
 .imagem-texto{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -118,97 +157,48 @@ header > ol li > a {
 .container-imagem{
     width: 300px;
     height: 350px;
-    /* border-radius: 30px; */
-}
+    border-radius: 8px;
+  }
 
 #imagem-nome{
     width: 100%;
     height: 100%;
 }
 
+
+
+
 /* Desafio Carrossel */
+.container-entretenimento{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap:  3rem;
+  background-color: #000000;
+}
 
-.container-entretenimento {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;  /* Centers horizontally */
-    /* height: 100%; */
-    justify-content: center;  /* Centers vertically */
-    align-items: center; /* Centers horizontally */
-  }
+.Carousel{
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
 
-  .Carousel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
+}
 
-  .slide-wrapper {
-    display: flex;
-    width: 300%; /* Three slides, so 300% width */
-    animation: slide 10s linear infinite;  
-  }
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Black);
+}
+.card img{
+  height: 400px;
+  width: 400px;
+  object-fit:contain;
+  border-radius: 8px;
+}
 
-  .Carousel img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-  }
-
-  .container-entretenimento {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;  /* Centers horizontally */
-    /* height: 100%; */
-    justify-content: center;  /* Centers vertically */
-    align-items: center; /* Centers horizontally */
-  }
-
-  .Carousel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .slide-wrapper {
-    display: flex;
-    width: 200%; /* Three slides, so 300% width */
-    animation: slide 10s linear infinite;  
-  }
-
-  .Carousel img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-  }
-
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    33.33% {
-      transform: translateX(-100%);
-    }
-    66.66% {
-      transform: translateX(-200%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  /* Optional: Adjusting spacing and styling for each carousel */
-  .Carousel + .Carousel {
-    margin-top: 20px;
-  }
-
-  /* Optional: Adjusting spacing and styling for each carousel */
-  .Carousel + .Carousel {
-    margin-top: 20px;
-  }
+.card h3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--DarkOrange);
+}
