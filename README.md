@@ -20,4 +20,8 @@ Não fiz footer, pois não vi a necessidade de um. Porém caso necessitasse, eu 
 <footer>
     #Conteudo
 </footer>
+
+#Depois
+</body>
+</html>
 ```
