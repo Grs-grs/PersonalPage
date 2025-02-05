@@ -1,3 +1,5 @@
+
+/* SETUP */
 *{
     margin: 0;
     padding: 0;
@@ -23,14 +25,7 @@ html, body {
 
 /* criacao de "variaveis" */
 :root{
-/* 
---cinza:#332B2B;
---cinzaClaro: #462F2E;
---BegeEscuro:#703A38;
---VermelhoRealce: #F00901;
---BegeClaro: #9B3734;
---VermelhoClaro: #C52621; 
-*/
+
 --DarkOrange:#FFA000;
 --LighterOrange:#FFECB3;
 --Yellow: #FFC107;
@@ -53,37 +48,37 @@ header{
     background-color: var(--Black);
 }
 
-header > ol{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center;
-    
-}
+  header > ol{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      height: 100%;
+      align-items: center;
+      
+  }
 
-header > ol li{
-    list-style-type: none;
-    color: var(--DarkOrange);
+    header > ol li{
+        list-style-type: none;
+        color: var(--DarkOrange);
 
-}
-
-
-header > ol li > a {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight:900;
-  font-size: 18px;
-}
+    }
 
 
-/* Barra de separação*/
+      header > ol li > a {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:900;
+        font-size: 18px;
+      }
+
+
+/* Barra de separação */
 
 .linha{
   height: 0.2rem;
   border-width: 0;
   color: black;
   background-color: #FFA000;
-  /* margin-top: 2rem; */
+ 
 }
 
 /* Comeco Nome */
@@ -92,18 +87,16 @@ header > ol li > a {
 
 .container-text-img{
   margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4rem;
   border-bottom: 2rem;
 }
-/*  */
 
 .sec-desc-img{
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 3rem; */
     background-color: var(--Black);
     padding-bottom: 7rem;
     
@@ -127,23 +120,23 @@ header > ol li > a {
     color: var(--DarkOrange);
 }
 
- .description{
+
+/* Other description class with different name*/
+.description{
     display: flex;
     flex-direction: column;
     width: 300px;
     height: 100%;
     row-gap: 1rem;
 }   
-.description p{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: 700;
-  font-style:normal;
-  font-size: 18px;
-  color: var(--LighterOrange);
-  
-}
-
-
+  .description p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-style:normal;
+    font-size: 18px;
+    color: var(--LighterOrange);
+    
+  }
 .imagem-texto{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -163,6 +156,7 @@ header > ol li > a {
 #imagem-nome{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 
@@ -191,14 +185,14 @@ header > ol li > a {
   align-items: center;
   background-color: var(--Black);
 }
-.card img{
-  height: 400px;
-  width: 400px;
-  object-fit:contain;
-  border-radius: 8px;
-}
+  .card img{
+    height: 400px;
+    width: 400px;
+    object-fit:contain;
+    border-radius: 8px;
+  }
 
-.card h3{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: var(--DarkOrange);
+  .card h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--DarkOrange);
 }

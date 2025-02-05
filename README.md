@@ -8,3 +8,16 @@ The page must have:
 - Your favorite movies + books + songs + series
 
 You don't have code requirements, for now.
+
+
+
+# ! DISCLAIMER
+Não fiz footer, pois não vi a necessidade de um. Porém caso necessitasse, eu ainda me lembro de como faz e a semântica para tal:
+
+```
+#Depois de </main>
+
+<footer>
+    #Conteudo
+</footer>
+```
