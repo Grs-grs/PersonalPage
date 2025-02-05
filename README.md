@@ -1,4 +1,4 @@
-# Use all yoyr knowledge in HTML + CSS to make a personal page 
+# Use all your knowledge in HTML + CSS to make a personal page 
 
 The page must have: 
 
